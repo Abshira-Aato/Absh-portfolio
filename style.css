@@ -1,0 +1,1323 @@
+
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+/* .area{
+    background: #0a0a0e;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+} */
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 255, 163);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* background korwye ogow */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+/* h1 */
+#typingAnimation {
+margin-top: 2px;
+margin-left: 32%;
+  }
+  
+  #typingText {
+  
+    display: inline-block;
+    animation: typing 3s steps(20) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid yellow;
+    width: 0;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+/* TODO: header design */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(50, 50, 2, 0.186);
+    z-index: 100;
+}
+a{
+    color: white;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar a{
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+.navbar a:hover, 
+.navbar a.activeLink
+{
+    color: yellow;
+
+}
+.navbar a:hover{
+    color: yellow;
+
+}
+.burger i{
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* TODO: sections size */
+
+section{
+    min-height: 100vh;
+    padding: 1rem 9% 2rem;
+}
+
+/* TODO: home section */
+.home{
+    display: flex;
+ justify-content: center;
+    align-items: center;
+}
+.home-content h1{
+    font-size: 2rem;
+    margin-left: 12%;
+}
+.home-content h1 span{
+    color: yellow;
+}
+
+
+.home-content p{
+    margin: 0.5rem auto;
+    width: 400px;
+    font-size: 0.7rem;
+    opacity: 0.7;
+    align-items: center;
+    text-align: start;
+}
+
+.home-content-btn{
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background: none;
+    border: 2px solid yellow;
+    cursor: pointer;
+    color: white;
+
+}
+/* .home-image{
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(5, 5, 5, 0.037);
+    width: 350px;
+    height: 400px;
+    right: 52px;
+    background-image: url("./images/323-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    border: 2px solid yellow;
+    background-position: center;
+    top: 3rem;
+
+} */
+
+/* TODO: about section */
+.about{
+    background-color: rgb(15, 14, 14);
+     margin: 2rem;
+     border-radius: 20px;
+
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 1rem;   
+}
+
+.about-me{
+    width: 350px;
+    height: 350px;
+    border: 6px solid yellow;
+    background-color: rgba(59, 90, 103, 0.07);
+    border-radius: 12px;
+    background-image: url('./images/33-removebg-preview.png ');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px;
+}
+
+.about-content{
+    position: relative;
+    left: 5rem;
+}
+
+.about h1{
+    margin-left: 2%;
+    margin-right: 52px;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    color: yellow;
+}
+
+.about-content .p-content{
+   padding: 0.1rem;
+   margin-top: 1rem;
+   color: white;
+}
+
+.about-content .p-content span{
+    position: relative;
+    color: yellow;
+    left: 0.5rem;
+}
+
+.summery{
+    padding: 0.1rem;
+    margin-top: 1rem;
+    width: 40rem;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 0.7rem;
+    color: white;
+margin-bottom: 12px;
+}
+
+.summery span{
+    color: yellow;
+    font-weight: bold;
+}
+
+
+
+
+/* TODO: Skill section */
+
+.skill{
+    margin: 2rem;
+    background-color: rgb(15, 14, 14);
+    border-radius: 20px;
+    /* animation: flash infinite 6s; */
+    /* animation: bounce infinite 6s; */
+ 
+}
+
+
+.skill-card{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    gap: 12px;
+    animation: bounce infinite 5s;
+
+}
+@keyframes fadeInLeftBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-2000px, 0, 0);
+      transform: translate3d(-2000px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+/* ///////////////////////////// */
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0,-4px,0);
+      transform: translate3d(0,-4px,0);
+    }
+  }
+@keyframes leexji{
+    50%{
+        margin-top: 2%;
+    }
+    0%{
+        margin-bottom: 2%;
+    }
+
+}
+/* ////// */
+
+.html{
+    background-color: rgb(35, 35, 34);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: .2rem solid rgb(15, 14, 14);;
+    transition: 2s ease;
+}
+.html:hover{
+    border-color: yellow; 
+    transform: scale(1.02);
+}
+
+
+.html h1{
+    text-align: center;
+    position: relative;
+    top: 0.7rem;
+}
+.icon{
+    background-color: rgb(49, 49, 49);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.icon i{
+    position: relative;
+    top: 1.3rem;
+    color: yellow;
+}
+
+.skillTitle{
+    position: relative;
+    font-size: 2rem;
+    opacity: 0.9;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    margin-top: 6rem;
+}
+
+
+.css{
+    background-color: rgb(35, 35, 34);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: .2rem solid rgb(15, 14, 14);;
+    transition: 2s ease;
+    cursor: pointer;
+}
+.css:hover{
+    border-color:yellow; 
+    transform: scale(1.02);
+}
+
+
+.css p {
+    font-size: 0.7rem;
+    text-align: center;
+    position: relative;
+    top: 1.5rem;
+    opacity: 0.7;
+}
+.css h1{
+    text-align: center;
+    position: relative;
+    top: 0.7rem;
+}
+.js{
+    background-color: rgb(35, 35, 34);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: .2rem solid rgb(15, 14, 14);;
+    transition: 2s ease;
+}
+.js:hover{
+    border-color:yellow; 
+    transform: scale(1.02);
+}
+
+.js p {
+    font-size: 0.7rem;
+    text-align: center;
+    position: relative;
+    top: 1.5rem;
+    opacity: 0.7;
+}
+.js h1{
+    text-align: center;
+    position: relative;
+    top: 0.7rem;
+    font-size: 23px;
+}
+
+
+/* TODO: Hobbies section */
+
+.hobbies{
+    background-color: rgb(15, 14, 14);
+    margin: 2rem;
+    border-radius: 20px;
+}
+
+.hobbies h1{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.hobbies h1 span{
+    color: yellow;
+}
+.hobbies-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+
+}
+
+.hobbies-container .hobbies-box{
+    position: relative;
+    border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgb(40, 39, 39);
+    overflow: hidden;
+    display: flex;
+        animation: flash infinite 6s;
+}
+.hobbies-box img{
+    width: 300px;
+    height: 300px;
+    transition: .5s ease;
+}
+
+.hobbies-box:hover img{
+    transform: scale(1.1);
+}
+
+.hobbies-box .hobbies-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(rgba(44, 42, 42, 0.1),rgb(63, 63, 63)); */
+    background-color: #484e546b;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 1s ease;
+}
+.hobbies-box:hover .hobbies-info{
+    transform: translateY(0);
+}
+
+
+.hobbies-info h1{
+    font-size: 1.3rem;
+    
+}
+
+.hobbies-info p{
+    font-size: 0.7rem;
+    margin: .3rem 0 2rem;
+    padding-left: 22px;
+    margin-right: 12px;
+    width: 300px;
+    
+}
+
+
+
+
+
+
+/* TODO: Contect section */
+
+.contect{
+    background-color: rgb(15, 14, 14);
+    margin: 2rem;
+    border-radius: 20px;
+}
+
+.contect h1{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.contect h1 span{
+    color: yellow;
+}
+.social{
+  
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 12%;
+    animation: bounce infinite 5s;
+}
+.social a i{
+    font-size: 32px;
+    color: yellow;
+}
+.social a i:hover{
+    color:grey;
+}
+hr{
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+/* TODO: footer section */
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: rgb(15, 14, 14);
+    border-radius: 2rem 0;
+}
+
+.footer-text p{
+    font-size: 0.9rem;
+}
+
+.footer-text p span{
+    color:yellow;
+}
+
+.footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .8rem;
+    background:transparent;
+    border: 2px solid yellow;
+    border-radius: .8rem;
+}
+
+
+.footer-icon a i{
+    font-size: 1.5rem;
+    color: white;
+   
+}
+
+
+
+
+
+
+/* responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    html{
+        font-size: 80%;
+    }
+ 
+   
+    
+}
+
+@media (max-width: 991px){
+    .header{
+       padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 20rem;
+    }
+    
+}
+
+@media (max-width: 860px){
+    .burger i{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+       background-color: rgba(67, 53, 3, 0.227);
+        border-top: .1rem solid rgba(0 , 0 , 0 , .2);
+        box-shadow:  0 .5rem 1rem rgba(0 , 0 , 0 , .2);
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.2em;
+        margin: 2rem 0;
+    }
+    .active{
+        display: block;
+      
+    }
+
+    .home{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 12px;
+        
+    }
+
+    .home-image{
+        position: relative;
+        border-radius: 10%;
+        width: 300px;
+        height: 350px;
+     margin-left: 18%;
+        background-size: 300px;
+    
+    }
+    .home-content p{
+
+padding: 33px;
+        padding-right: 22PX; 
+
+    }
+    .home-content h1{
+        position: relative;
+
+    }
+
+
+    .about-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .about-me{
+
+        background-size: 250px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .about-content {
+        left: 0;
+    }
+    .about-content h1{
+        font-size: 27px;
+    }
+
+    .summery{
+        text-align: center;
+        margin: 1rem auto;
+
+    
+    }
+
+    .about-content .p-content {
+        text-align: center;
+     }
+
+     .html{
+        width: 230px;
+     }
+     .css{
+        width: 230px;
+     }
+     .js{
+        width: 230px;
+     }
+}
+
+
+@media (max-width: 680px){
+    .skill-card{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr );
+        grid-template-rows: 2fr;
+        gap: 10px; 
+      
+    }
+    .js{
+        margin-left: 7rem;
+        width: 300px;
+
+    }
+    .html{
+        margin-left: 7rem;
+        width: 300px;
+     }
+     .html p{
+        font-size: 1rem;
+     }
+     .css{
+        margin-left: 7rem;
+        width: 300px;
+  
+     }
+     .css p{
+        font-size: 1rem;
+     }
+    
+     .js p{
+        font-size: 1rem;
+     }
+
+     .hobbies-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .hobbies-info p{
+        font-size: 0.7rem;
+        margin: .3rem 0 1rem;
+        width: 200px;
+    }
+}
+
+@media (max-width: 420px){
+
+    .header{
+        width: 350px;
+    }
+    
+    .home-content p{
+        position: relative;
+        
+        width: 250px;
+        
+    }
+    /* .home-content-btn{
+        position: relative;
+        left: 9rem;
+    } */
+    .active{
+        display: block;
+        margin-right: 22%;
+      
+    }
+
+    .hobbies-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .hobbies-info p{
+        font-size: 0.7rem;
+        margin: .3rem 0 1rem;
+        width: 150px;
+    }
+
+    .js{
+        margin-left: 0;
+        width: 280px;
+
+    }
+    .html{
+        margin-left: 0;
+        width: 280px;
+     }
+     .html p{
+        font-size: 1rem;
+     }
+     .css{
+        margin-left: 0;
+        width: 280px;
+  
+     }
+     .css p{
+        font-size: 1rem;
+     }
+    
+     .js p{
+        font-size: 1rem;
+     }
+
+     .summery{
+        padding: 0rem;
+        margin-top: 1rem;
+        width: 20rem;
+        letter-spacing: .2px;
+        line-height: 26px;
+        font-size: .7rem;
+        padding-bottom: 22px;
+        color: white;
+        /* margin-right: 40rem; */
+    
+    }
+    .home-image{
+        position: relative;
+        border-radius: 10%;
+        width: 250px;
+        margin-left: 22%;
+        height: 300px;
+        margin: 0 auto;
+        background-size: 200px;
+    
+    }
+    .home .home-image{
+    margin-left: 55px;
+    }
+
+    .about-me{
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+    }
+    
+
+}
+@media (max-width: 450px){
+
+    .header{
+        width: 350px;
+    }
+    
+    .home-content p{
+        position: relative;
+        
+        width: 250px;
+        
+    }
+    /* .home-content-btn{
+        position: relative;
+        left: 9rem;
+    } */
+    .active{
+        display: block;
+        margin-right: 22%;
+      
+    }
+
+    .hobbies-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .hobbies-info p{
+        font-size: 0.7rem;
+        margin: .3rem 0 1rem;
+        width: 150px;
+    }
+
+    .js{
+        margin-left: 0;
+        width: 280px;
+
+    }
+    .html{
+        margin-left: 0;
+        width: 280px;
+     }
+     .html p{
+        font-size: 1rem;
+     }
+     .css{
+        margin-left: 0;
+        width: 280px;
+  
+     }
+     .css p{
+        font-size: 1rem;
+     }
+    
+     .js p{
+        font-size: 1rem;
+     }
+
+     .summery{
+        padding: 0rem;
+        margin-top: 1rem;
+        width: 20rem;
+        letter-spacing: .2px;
+        line-height: 26px;
+        font-size: .7rem;
+        padding-bottom: 22px;
+        color: white;
+        /* margin-right: 40rem; */
+    
+    }
+    .home-image{
+        position: relative;
+        border-radius: 10%;
+        width: 250px;
+        margin-left: 22%;
+        height: 300px;
+        margin: 0 auto;
+        background-size: 200px;
+    
+    }
+    .home .home-image{
+    margin-left: 55px;
+    }
+
+    .about-me{
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+    }
+    
+
+}
+@media (max-width: 412px){
+
+    .header{
+        width: 350px;
+    }
+    
+    .home-content p{
+        position: relative;
+        
+        width: 250px;
+        
+    }
+    /* .home-content-btn{
+        position: relative;
+        left: 9rem;
+    } */
+    .active{
+        display: block;
+        margin-right: 22%;
+      
+    }
+
+    .hobbies-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .hobbies-info p{
+        font-size: 0.7rem;
+        margin: .3rem 0 1rem;
+        width: 150px;
+    }
+
+    .js{
+        margin-left: 0;
+        width: 280px;
+
+    }
+    .html{
+        margin-left: 0;
+        width: 280px;
+     }
+     .html p{
+        font-size: 1rem;
+     }
+     .css{
+        margin-left: 0;
+        width: 280px;
+  
+     }
+     .css p{
+        font-size: 1rem;
+     }
+    
+     .js p{
+        font-size: 1rem;
+     }
+
+     .summery{
+        padding: 0rem;
+        margin-top: 1rem;
+        width: 20rem;
+        letter-spacing: .2px;
+        line-height: 26px;
+        font-size: .7rem;
+        padding-bottom: 22px;
+        color: white;
+        /* margin-right: 40rem; */
+    
+    }
+    .home-image{
+        position: relative;
+        border-radius: 10%;
+        width: 250px;
+        margin-left: 22%;
+        height: 300px;
+        margin: 0 auto;
+        background-size: 200px;
+    
+    }
+    .home .home-image{
+    margin-left: 55px;
+    }
+
+    .about-me{
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+    }
+    
+
+}
+
+@media (max-width: 350px){
+
+    .header{
+        width: 350px;
+    }
+    
+    .home-content p{
+        position: relative;
+        
+        width: 250px;
+        
+    }
+    /* .home-content-btn{
+        position: relative;
+        left: 9rem;
+    } */
+    .active{
+        display: block;
+        margin-right: 22%;
+      
+    }
+
+    .hobbies-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .hobbies-info p{
+        font-size: 0.7rem;
+        margin: .3rem 0 1rem;
+        width: 150px;
+    }
+
+    .js{
+        margin-left: 0;
+        width: 280px;
+
+    }
+    .html{
+        margin-left: 0;
+        width: 280px;
+     }
+     .html p{
+        font-size: 1rem;
+     }
+     .css{
+        margin-left: 0;
+        width: 280px;
+  
+     }
+     .css p{
+        font-size: 1rem;
+     }
+    
+     .js p{
+        font-size: 1rem;
+     }
+
+     .summery{
+        padding: 0rem;
+        margin-top: 1rem;
+        width: 20rem;
+        letter-spacing: .2px;
+        line-height: 26px;
+        font-size: .7rem;
+        padding-bottom: 22px;
+        color: white;
+        /* margin-right: 40rem; */
+    
+    }
+    .home-image{
+        position: relative;
+        border-radius: 10%;
+        width: 250px;
+        margin-left: 22%;
+        height: 300px;
+        margin: 0 auto;
+        background-size: 200px;
+    
+    }
+    .home .home-image{
+    margin-left: 55px;
+    }
+
+    .about-me{
+        width: 250px;
+        height: 250px;
+        background-size: 250px;
+    }
+    
+
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  @-webkit-keyframes flash {
+    from, 50%, to {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flash {
+    from, 50%, to {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+
+
+  
+
+
+/* 
+call place */
+
+
+.container {
+    text-align: center;
+    background:transparent;
+    padding: 20px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.categories {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #484e54;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    color: yellow;
+}
+
+.quote {
+    margin-top: 20px;
+}
+
+#quote-text {
+    font-size: 18px;
+    
+}
